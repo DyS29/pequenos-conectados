@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Blog - Pequeños Conectados</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>📰 Nuestro Blog</h1>
+    <p>Artículos y consejos sobre cómo la tecnología afecta a los niños</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nuestro-blog.html">Nuestro Blog</a></li>
+        <li><a href="guia-manual.html">Guia Multidimensional</a></li>
+        <li><a href="plan-trabajo.html">Plan de Trabajo</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- Introducción -->
+    <section id="introduccion">
+        <h2>📘 Introducción al Blog</h2>
+        <p>
+            Bienvenido a nuestro blog educativo <strong>Pequeños Conectados, Grandes Protegidos</strong>. 
+            Aquí compartimos información, estudios y consejos sobre el uso seguro de la tecnología por parte de los niños. 
+            Nuestro objetivo es apoyar a padres y educadores para que los niños crezcan seguros, informados y equilibrados en un mundo digital.
+        </p>
+
+        <div class="interacciones">
+            <h3>💬 Tu opinión</h3>
+            <button onclick="like('0')">👍 (<span id="likes0">0</span>)</button>
+            <button onclick="dislike('0')">👎 (<span id="dislikes0">0</span>)</button>
+            <button onclick="meEncanta('0')">❤️ (<span id="encanta0">0</span>)</button>
+            <input type="text" id="nombre0" placeholder="Tu nombre">
+            <textarea id="comentario0" placeholder="Escribe tu opinión..."></textarea>
+            <button onclick="agregarComentario('0')">Comentar</button>
+            <div id="listaComentarios0"></div>
+        </div>
+    </section>
+
+    <!-- Impacto Positivo -->
+    <section id="positivo">
+        <h2>✅ Impacto Positivo de la Tecnología</h2>
+        <p>
+            La tecnología puede ser una herramienta educativa muy poderosa. Algunos beneficios incluyen:
+        </p>
+        <ul>
+            <li>📚 <strong>Aprendizaje:</strong> Aplicaciones y plataformas digitales ayudan a reforzar lectura, matemáticas y ciencias.</li>
+            <li>🎨 <strong>Creatividad:</strong> Juegos y programas fomentan la imaginación, dibujo, música y narración.</li>
+            <li>💻 <strong>Habilidades digitales:</strong> Familiarización temprana con tecnología útil para su futuro académico y profesional.</li>
+            <li>🌐 <strong>Acceso a información:</strong> Permite investigar y aprender sobre temas diversos de forma segura y guiada.</li>
+        </ul>
+
+        <div class="interacciones">
+            <h3>💬 Opiniones sobre este tema</h3>
+            <button onclick="like('1')">👍 (<span id="likes1">0</span>)</button>
+            <button onclick="dislike('1')">👎 (<span id="dislikes1">0</span>)</button>
+            <button onclick="meEncanta('1')">❤️ (<span id="encanta1">0</span>)</button>
+            <input type="text" id="nombre1" placeholder="Tu nombre">
+            <textarea id="comentario1" placeholder="Escribe tu opinión..."></textarea>
+            <button onclick="agregarComentario('1')">Comentar</button>
+            <div id="listaComentarios1"></div>
+        </div>
+    </section>
+
+    <!-- Impacto Negativo -->
+    <section id="negativo">
+        <h2>⚠️ Impacto Negativo de la Tecnología</h2>
+        <p>
+            Aunque la tecnología tiene beneficios, el uso excesivo o sin supervisión puede generar riesgos:
+        </p>
+        <ul>
+            <li>🛌 <strong>Falta de sueño:</strong> Horas prolongadas frente a pantallas afectan el descanso.</li>
+            <li>🧍‍♂️ <strong>Sedentarismo:</strong> El exceso de juegos y videos reduce la actividad física.</li>
+            <li>📱 <strong>Exposición a redes sociales:</strong> Riesgo de contenido inadecuado o contacto con desconocidos.</li>
+            <li>🧠 <strong>Concentración y sociabilidad:</strong> Uso excesivo puede afectar habilidades sociales y atención.</li>
+        </ul>
+
+        <div class="interacciones">
+            <h3>💬 Opiniones sobre este tema</h3>
+            <button onclick="like('2')">👍 (<span id="likes2">0</span>)</button>
+            <button onclick="dislike('2')">👎 (<span id="dislikes2">0</span>)</button>
+            <button onclick="meEncanta('2')">❤️ (<span id="encanta2">0</span>)</button>
+            <input type="text" id="nombre2" placeholder="Tu nombre">
+            <textarea id="comentario2" placeholder="Escribe tu opinión..."></textarea>
+            <button onclick="agregarComentario('2')">Comentar</button>
+            <div id="listaComentarios2"></div>
+        </div>
+    </section>
+
+    <!-- Recomendaciones -->
+    <section id="recomendaciones">
+        <h2>💡 Recomendaciones para Padres</h2>
+        <p>Algunos consejos prácticos para un uso seguro y equilibrado de la tecnología:</p>
+        <ul>
+            <li>⏱️ Limitar el tiempo de pantalla a 1-2 horas al día según la edad, con pausas frecuentes.</li>
+            <li>👨‍👩‍👧 Supervisar contenido y acompañar al niño mientras usa dispositivos.</li>
+            <li>🌳 Promover actividades al aire libre y tiempo en familia sin pantallas.</li>
+            <li>📚 Usar tecnología educativa que enseñe habilidades y conocimientos.</li>
+            <li>🛡️ Explicar riesgos de compartir información personal y redes sociales.</li>
+        </ul>
+
+        <div class="interacciones">
+            <h3>💬 Opiniones sobre este tema</h3>
+            <button onclick="like('3')">👍 (<span id="likes3">0</span>)</button>
+            <button onclick="dislike('3')">👎 (<span id="dislikes3">0</span>)</button>
+            <button onclick="meEncanta('3')">❤️ (<span id="encanta3">0</span>)</button>
+            <input type="text" id="nombre3" placeholder="Tu nombre">
+            <textarea id="comentario3" placeholder="Escribe tu opinión..."></textarea>
+            <button onclick="agregarComentario('3')">Comentar</button>
+            <div id="listaComentarios3"></div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>📚 Pequeños Conectados | Blog educativo sobre niños y tecnología | 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* ----------------------------- */
+/* TIPOGRAFÍA Y FONDO GENERAL */
+/* ----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #a0c4ff, #ffadad); /* azul y rosa pastel */
+    color: #333;
+}
+
+/* ----------------------------- */
+/* HEADER */
+/* ----------------------------- */
+header {
+    background-color: #ffd6f0; /* rosa pastel */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin: 0.2em 0;
+    color: #555;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* ----------------------------- */
+/* NAVEGACIÓN */
+/* ----------------------------- */
+nav {
+    background-color: #8ecae6; /* azul claro */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff7eb9; /* rosa vibrante al pasar */
+    transform: scale(1.1);
+}
+
+/* ----------------------------- */
+/* MAIN / SECCIONES */
+/* ----------------------------- */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ff7eb9; /* rosa */
+}
+
+section p, section ul, section ol {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+/* ----------------------------- */
+/* CARRUSEL DE IMÁGENES */
+/* ----------------------------- */
+.carrusel-imagenes {
+    width: 100%;           /* Ocupa todo el ancho del contenedor principal */
+    overflow: hidden;      /* Oculta las imágenes que sobresalen */
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.carrusel-track {
+    display: flex;         /* Permite que las imágenes estén en línea */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-track img {
+    width: 100%;           /* Cada imagen ocupa todo el ancho del contenedor */
+    max-height: 400px;     /* Altura máxima uniforme */
+    object-fit: cover;     /* Ajusta la imagen recortando si es necesario, mantiene proporción */
+    flex-shrink: 0;        /* Evita que las imágenes se reduzcan */
+    border-radius: 15px;
+    margin-right: 10px;    /* Espacio entre imágenes */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .carrusel-track img {
+        max-height: 250px;
+        margin-right: 5px;
+    }
+}
+
+/* ----------------------------- */
+/* BLOQUE DE INTERACCIONES */
+/* ----------------------------- */
+.interacciones {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #caf0f8; /* azul claro pastel */
+    border-left: 6px solid #90e0ef;
+    border-radius: 12px;
+}
+
+.interacciones h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+    color: #023e8a; /* azul oscuro */
+}
+
+/* BOTONES */
+.interacciones button {
+    cursor: pointer;
+    margin: 5px 5px 5px 0;
+    padding: 8px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+/* Diferentes colores */
+.interacciones button:nth-of-type(1) { background-color: #48cae4; color: white; } /* Me gusta azul */
+.interacciones button:nth-of-type(2) { background-color: #ff6b6b; color: white; } /* No me gusta rosa */
+.interacciones button:nth-of-type(3) { background-color: #ffd6a5; color: #333; } /* Me encanta amarillo pastel */
+
+/* Hover y click */
+.interacciones button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+.interacciones button:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* INPUTS Y TEXTAREA */
+.interacciones input, .interacciones textarea {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin: 5px 0;
+    border: 2px solid #90e0ef;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: all 0.2s ease;
+}
+
+.interacciones input:focus, .interacciones textarea:focus {
+    border-color: #48cae4;
+    outline: none;
+    box-shadow: 0 0 8px rgba(72,202,228,0.5);
+}
+
+/* LISTA DE COMENTARIOS */
+#listaComentarios0, #listaComentarios1, #listaComentarios2,
+#listaComentarios3, #listaComentarios4, #listaComentarios5 {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#listaComentarios0 p, #listaComentarios1 p, #listaComentarios2 p,
+#listaComentarios3 p, #listaComentarios4 p, #listaComentarios5 p {
+    background-color: #bde0fe;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+/* ----------------------------- */
+/* FOOTER */
+/* ----------------------------- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffadad; /* rosa pastel */
+    font-size: 1em;
+    color: #333;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+}

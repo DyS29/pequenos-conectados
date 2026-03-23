@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pequeños Conectados</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>👶🖥️ PEQUEÑOS CONECTADOS, GRANDES PROTEGIDOS</h1>
+    <p>Grandes protegidos: acompañamos a las familias en un mundo digital</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nuestro-blog.html">Nuestro Blog</a></li>
+        <li><a href="guia-manual.html">Guia Multidimensional</a></li>
+        <li><a href="plan-trabajo.html">Plan de Trabajo</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- Carrusel de imágenes -->
+    <div class="carrusel-imagenes">
+        <div class="carrusel-track">
+            <img src="imagenes/1.jpeg">
+            <img src="imagenes/2.jpeg">
+            <img src="imagenes/3.jpeg">
+            <img src="imagenes/4.jpeg">
+            <img src="imagenes/5.jpeg">
+            <!-- Repetimos las imágenes para efecto bucle -->
+            <img src="imagenes/1.jpeg">
+            <img src="imagenes/2.jpeg">
+            <img src="imagenes/3.jpeg">
+            <img src="imagenes/4.jpeg">
+            <img src="imagenes/5.jpeg">
+        </div>
+    </div>
+
+    <!-- Bienvenida -->
+    <section>
+        <h2>🌟 Bienvenida</h2>
+        <p>
+            ¡Bienvenidos a <strong>Pequeños Conectados</strong>! Aquí acompañamos a las familias en el mundo digital, 
+            compartimos consejos y beneficios sobre el uso seguro de la tecnología y redes sociales para niños. 
+            Nuestro objetivo es que los pequeños crezcan seguros, informados y equilibrados.
+        </p>
+
+        <p>
+            En este espacio encontrarás artículos, guías y planes de trabajo pensados para padres y educadores, 
+            con el fin de proteger, educar y acompañar a los niños mientras descubren el mundo digital.
+        </p>
+
+        <!-- Interacciones -->
+        <div class="interacciones">
+            <h3>💬 Tu opinión</h3>
+            <button onclick="like('0')">👍 (<span id="likes0">0</span>)</button>
+            <button onclick="dislike('0')">👎 (<span id="dislikes0">0</span>)</button>
+            <button onclick="meEncanta('0')">❤️ (<span id="encanta0">0</span>)</button>
+            <input type="text" id="nombre0" placeholder="Tu nombre">
+            <textarea id="comentario0" placeholder="Escribe tu opinión..."></textarea>
+            <button onclick="agregarComentario('0')">Comentar</button>
+            <div id="listaComentarios0"></div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section>
+        <h2>📞 Contacto</h2>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <ul class="redes-sociales">
+            <li><a href="https://www.facebook.com/profile.php?id=61576525794713" target="_blank">📘 Facebook</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>📚 Pequeños Conectados | Blog educativo sobre niños y tecnología | 2026</p>
+</footer>
+
+<!-- Script del carrusel y demás funciones -->
+<script>
+    // CARRUSEL AUTOMÁTICO
+    const track = document.querySelector('.carrusel-track');
+    let index = 0; // Imagen actual
+    const total = track.children.length / 2; // Solo contamos las 5 originales
+
+    function moverCarrusel() {
+        index++;
+        if (index >= total) {
+            index = 0;
+            track.style.transition = 'none'; // Resetea la transición
+            track.style.transform = `translateX(0)`;
+            track.offsetHeight; // Forzar reflujo
+            track.style.transition = 'transform 0.5s ease-in-out';
+        } else {
+            const ancho = track.children[0].getBoundingClientRect().width + 10; // imagen + margen
+            track.style.transform = `translateX(-${ancho * index}px)`;
+        }
+    }
+
+    setInterval(moverCarrusel, 2000); // Cambia cada 2 segundos
+
+    // Aquí puedes mantener tus funciones de like, dislike, meEncanta, agregarComentario
+</script>
+<script src="script.js"></script>
+</body>
+</html>
