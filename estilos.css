@@ -7,7 +7,7 @@ body {
     font-family: 'Comic Neue', cursive;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #a0c4ff, #ffadad); /* azul y rosa pastel */
+    background: linear-gradient(135deg, #a0c4ff, #ffadad);
     color: #333;
 }
 
@@ -15,7 +15,7 @@ body {
 /* HEADER */
 /* ----------------------------- */
 header {
-    background-color: #ffd6f0; /* rosa pastel */
+    background-color: #ffd6f0;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -36,7 +36,7 @@ header p {
 /* NAVEGACIÓN */
 /* ----------------------------- */
 nav {
-    background-color: #8ecae6; /* azul claro */
+    background-color: #8ecae6;
     padding: 10px 0;
     text-align: center;
 }
@@ -63,7 +63,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ff7eb9; /* rosa vibrante al pasar */
+    background-color: #ff7eb9;
     transform: scale(1.1);
 }
 
@@ -86,7 +86,15 @@ section {
 section h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
-    color: #ff7eb9; /* rosa */
+    color: #ff7eb9;
+}
+
+/* 🔽 AQUÍ ESTÁ LA SOLUCIÓN */
+section h3 {
+    font-size: 1.05em;   /* tamaño más pequeño */
+    font-weight: normal; /* menos grueso */
+    color: #555;         /* tono suave */
+    margin: 4px 0;       /* menos espacio */
 }
 
 section p, section ul, section ol {
@@ -98,28 +106,27 @@ section p, section ul, section ol {
 /* CARRUSEL DE IMÁGENES */
 /* ----------------------------- */
 .carrusel-imagenes {
-    width: 100%;           /* Ocupa todo el ancho del contenedor principal */
-    overflow: hidden;      /* Oculta las imágenes que sobresalen */
+    width: 100%;
+    overflow: hidden;
     border-radius: 15px;
     margin-bottom: 30px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .carrusel-track {
-    display: flex;         /* Permite que las imágenes estén en línea */
+    display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
 .carrusel-track img {
-    width: 100%;           /* Cada imagen ocupa todo el ancho del contenedor */
-    max-height: 400px;     /* Altura máxima uniforme */
-    object-fit: cover;     /* Ajusta la imagen recortando si es necesario, mantiene proporción */
-    flex-shrink: 0;        /* Evita que las imágenes se reduzcan */
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
     border-radius: 15px;
-    margin-right: 10px;    /* Espacio entre imágenes */
+    margin-right: 10px;
 }
 
-/* Para pantallas pequeñas */
 @media (max-width: 768px) {
     .carrusel-track img {
         max-height: 250px;
@@ -133,7 +140,7 @@ section p, section ul, section ol {
 .interacciones {
     margin-top: 20px;
     padding: 15px;
-    background-color: #caf0f8; /* azul claro pastel */
+    background-color: #caf0f8;
     border-left: 6px solid #90e0ef;
     border-radius: 12px;
 }
@@ -141,10 +148,9 @@ section p, section ul, section ol {
 .interacciones h3 {
     margin-top: 0;
     font-size: 1.3em;
-    color: #023e8a; /* azul oscuro */
+    color: #023e8a;
 }
 
-/* BOTONES */
 .interacciones button {
     cursor: pointer;
     margin: 5px 5px 5px 0;
@@ -156,12 +162,10 @@ section p, section ul, section ol {
     box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
 
-/* Diferentes colores */
-.interacciones button:nth-of-type(1) { background-color: #48cae4; color: white; } /* Me gusta azul */
-.interacciones button:nth-of-type(2) { background-color: #ff6b6b; color: white; } /* No me gusta rosa */
-.interacciones button:nth-of-type(3) { background-color: #ffd6a5; color: #333; } /* Me encanta amarillo pastel */
+.interacciones button:nth-of-type(1) { background-color: #48cae4; color: white; }
+.interacciones button:nth-of-type(2) { background-color: #ff6b6b; color: white; }
+.interacciones button:nth-of-type(3) { background-color: #ffd6a5; color: #333; }
 
-/* Hover y click */
 .interacciones button:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 6px 10px rgba(0,0,0,0.25);
@@ -172,7 +176,6 @@ section p, section ul, section ol {
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-/* INPUTS Y TEXTAREA */
 .interacciones input, .interacciones textarea {
     width: calc(100% - 20px);
     padding: 8px 10px;
@@ -180,7 +183,6 @@ section p, section ul, section ol {
     border: 2px solid #90e0ef;
     border-radius: 10px;
     font-size: 1em;
-    transition: all 0.2s ease;
 }
 
 .interacciones input:focus, .interacciones textarea:focus {
@@ -215,7 +217,7 @@ section p, section ul, section ol {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #ffadad; /* rosa pastel */
+    background-color: #ffadad;
     font-size: 1em;
     color: #333;
     box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
