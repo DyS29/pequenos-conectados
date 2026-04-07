@@ -1,7 +1,4 @@
-```css
-/* ----------------------------- */
-/* TIPOGRAFÍA Y FONDO GENERAL */
-/* ----------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
 
 body {
@@ -254,4 +251,17 @@ footer {
     color: #333;
     box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
 }
-```
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* más grande */
+    margin: 30px auto;
+}
+
+/* 🔥 truco responsive */
+.video-container iframe {
+    width: 100%;
+    height: 500px; /* más alto */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
